@@ -3,53 +3,61 @@ export const projects = [
         imageUrl: '/Images/SkillForgeLogo.png',
         title: 'SkillForge',
         liveUrl: "https://skillforge.kunalnasa.xyz/",
-        description: 'SkillForge is an AI-powered roadmap creation tool designed to guide users in achieving their learning goals while tracking their progress effectively.You can ask for a personalized roadmap by providing it’s duration, title, and specifications. It’s your friendly companion for skill development!',
+        description: 'AI-powered tool for generating personalized learning roadmaps with progress tracking.',
         githubUrl: 'https://github.com/KunalNasa/skillforge',
-        techstack : ['MongoDB', 'Next.js', 'Zod', 'Gemini API', 'Shadcn UI']
+        techstack: ['MongoDB', 'Next.js', 'Zod', 'Gemini API', 'Shadcn UI']
     },
     {
-        imageUrl: '/Images/WiseUp.png',
-        title: 'WiseUp',
-        liveUrl: "https://wiseup.kunalnasa.xyz",
-        description: 'WiseUp is a transaction management SaaS application that helps users track monthly transactions and visualize spending analysis through interactive graphs. It’s your friendly financial assistant!',
-        githubUrl: 'https://github.com/KunalNasa/WiseUp',
-        techstack : ['PostgreSQL', 'Next.js', 'Zod', 'Clerk', 'Shadcn UI', 'Stripe', 'Web-hooks', 'NeonDB']
+        imageUrl: '/Images/slates.jpeg',
+        title: 'Slates',
+        description: 'Real-time collaborative canvas board with feature of zooming, panning and more.',
+        githubUrl: 'https://github.com/KunalNasa/slates',
+        techstack: ['Postgres', 'Next.js', 'Express.js',  'Zod', 'Web sockets', "BullMQ", "Redis", "Turborepo"]
     },
     {
-        imageUrl: '/Images/wetalk.png',
-        title: 'WeTalk',
-        liveUrl: "https://wetalk-2vvh.onrender.com/",
-        description: 'WeTalk is a real-time chatting application developed using Socket.IO and the MERN stack. It provides users with instant messaging and a seamless user experience. Chat with friends in a friendly way!',
-        githubUrl: 'https://github.com/KunalNasa/ChatApp',
-        techstack : ['MongoDB', 'React.js', 'Express.js',  'Zod', 'Socket.io', 'Daisy UI', 'Zustand']
+      imageUrl: '/Images/wiseupNew.jpeg',
+      title: 'WiseUp',
+      liveUrl: "https://wiseup.kunalnasa.xyz",
+      description: 'SaaS app for managing monthly transactions and visualizing spending through charts.',
+      githubUrl: 'https://github.com/KunalNasa/WiseUp',
+      techstack: ['PostgreSQL', 'Next.js', 'Zod', 'Clerk', 'Shadcn UI', 'Stripe', 'Web-hooks', 'NeonDB']
     },
     {
-        imageUrl: '/Images/go0ton.png',
+        imageUrl: '/Images/go0-nNew.png',
         title: 'Recruitment Marketplace',
         liveUrl: "https://go0-n.com",
-        description: 'Built a recruitment marketplace that helps organizations outsource their recruitment process to us. It also gives recruiters a chance to earn by providing the right talent for job postings.',
-        techstack : ['MongoDB', 'Next.js', 'Zod', 'Nodemailer', 'Shadcn UI', 'Aceternity UI', 'Axios']
+        description: 'A platform connecting companies with recruiters to simplify hiring and talent sourcing.',
+        techstack: ['MongoDB', 'Next.js', 'Zod', 'Nodemailer', 'Shadcn UI', 'Aceternity UI', 'Axios']
     },
     {
-        imageUrl: '/Images/FeedBackApp.png',
-        title: 'SendMeAFeedback',
-        liveUrl: "https://send-me-a-feedback.vercel.app/",
-        description: 'SendMeAFeedback is an anonymous feedback application utilizing Next.js, TypeScript, and Zod for validation. It integrates the Gemini API to generate intelligent feedback responses while ensuring user privacy. Your friendly feedback tool!',
-        githubUrl: 'https://github.com/KunalNasa/send-me-a-feedback',
-        techstack : ['MongoDB', 'Next.js', 'Zod', 'Nodemailer', 'Shadcn UI']
+      imageUrl: '/Images/wetalk.png',
+      title: 'WeTalk',
+      liveUrl: "https://wetalk-2vvh.onrender.com/",
+      description: 'Real-time chat app using Socket.IO and MERN stack with instant messaging features.',
+      githubUrl: 'https://github.com/KunalNasa/ChatApp',
+      techstack: ['MongoDB', 'React.js', 'Express.js', 'Zod', 'Socket.io', 'Daisy UI', 'Zustand']
     },
     {
-        imageUrl: '/Images/GDlogo.png',
-        title: 'Green Dash',
-        description: 'Green Dash is a sustainable living dashboard featuring a carbon footprint calculator built with the MERN stack. It promotes eco-friendly habits and helps users track their environmental impact effectively. Your friendly guide to a greener life!',
-        githubUrl: 'https://github.com/KunalNasa/SustainableLivingDash',
-        techstack : ['MongoDB', 'Next.js', 'Zod', 'Nodemailer', 'Shadcn UI']
+      imageUrl: '/Images/FeedBackApp.png',
+      title: 'SendMeAFeedback',
+      liveUrl: "https://send-me-a-feedback.vercel.app/",
+      description: 'Anonymous feedback tool with intelligent Gemini API responses and privacy focus.',
+      githubUrl: 'https://github.com/KunalNasa/send-me-a-feedback',
+      techstack: ['MongoDB', 'Next.js', 'Zod', 'Nodemailer', 'Shadcn UI']
     },
     {
-        imageUrl: '/Images/spotifyLogo.svg',
-        title: 'Spotify Clone',
-        description: 'This Spotify Clone is a fully responsive music application developed using Vanilla JavaScript. It features audio playback, playlist management, and a user-friendly interface for an immersive music experience. Enjoy your music in a friendly way!',
-        githubUrl: 'https://github.com/KunalNasa/Web-Dev/tree/main/Spotify',
-        techstack : ['MongoDB', 'Next.js', 'Zod', 'Nodemailer', 'Shadcn UI']
+      imageUrl: '/Images/GDlogo.png',
+      title: 'Green Dash',
+      description: 'Sustainability dashboard with a carbon footprint calculator to promote eco habits.',
+      githubUrl: 'https://github.com/KunalNasa/SustainableLivingDash',
+      techstack: ['MongoDB', 'Next.js', 'Zod', 'Nodemailer', 'Shadcn UI']
     },
-];
+    {
+      imageUrl: '/Images/spotifyLogo.svg',
+      title: 'Spotify Clone',
+      description: 'Responsive music app built with Vanilla JS featuring audio playback and playlists.',
+      githubUrl: 'https://github.com/KunalNasa/Web-Dev/tree/main/Spotify',
+      techstack: ['MongoDB', 'Next.js', 'Zod', 'Nodemailer', 'Shadcn UI']
+    },
+  ];
+  

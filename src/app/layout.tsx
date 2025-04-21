@@ -1,13 +1,8 @@
-'use client';  // Marking the file as a client component
-
-import { useEffect, useState } from "react";
 import localFont from "next/font/local";
-import { ThemeProvider } from "next-themes";
-import Navbar from "@/components/Navbar";
-import { Toaster } from "@/components/ui/toaster";
-import MetadataProvider from "@/components/MetadataProvider";
 import "./globals.css";
-
+import {  Lacquer } from "next/font/google"
+import { Rubik_Spray_Paint } from "next/font/google";
+import { Silkscreen } from "next/font/google"
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -19,37 +14,33 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const lacquer = Lacquer({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  variable: "--font-lacquer",
+})
+
+
+const rubik = Rubik_Spray_Paint({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  variable: "--font-rubik",
+})
+
+
+const skillscreen = Silkscreen({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  variable: "--font-skillscreen",
+})
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} dark:bg-gray-950 bg-slate-50 relative ${geistMono.variable} antialiased`}>
-        {mounted ? (
-          <>
-            <MetadataProvider
-              title="Kunal Nasa - Portfolio"
-              description="Hey, I'm Kunal Nasa! Explore my portfolio, skills, and projects."
-              imageUrl="/Images/AppLogo.jpeg"
-              url="https://kunalnasa.xyz"
-            />
-            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-              <Navbar />
-              {children}
-              <Toaster />
-            </ThemeProvider>
-          </>
-        ) : (
-          <>
-            <Navbar />
-            {children}
-            <Toaster />
-          </>
-        )}
+    <html lang="en" className="scroll-smooth">
+      <body className={`${geistSans.variable} ${skillscreen.variable} ${rubik.variable} ${lacquer.variable} dark:bg-black/5 bg-slate-50 relative ${geistMono.variable} antialiased`}>
+        {children}
       </body>
     </html>
   );
