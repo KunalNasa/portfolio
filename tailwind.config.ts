@@ -1,3 +1,4 @@
+import { Rubik_Dirt } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const svgToDataUri = require("mini-svg-data-uri");
@@ -17,6 +18,10 @@ const config: Config = {
   theme: {
   	extend: {
 		fontFamily: {
+			mitr : ['var(--font-lacquer)'],
+			rubik : ['var(--font-rubik)'],
+			skillscreen : ['var(--font-skillscreen)'],
+
 			super: ['BDSuper', 'sans-serif'], // Add your font here
 		  },
   		colors: {
