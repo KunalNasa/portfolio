@@ -14,7 +14,7 @@ export default function OnThisPage() {
             <p className="mb-4 text-[18px]">On this page</p>
             <div className="flex flex-col gap-2">
                 {content.map((item) => (
-                    <Link className="dark:hover:text-white hover:underline hover:text-black" href={item.id}>{item.name}</Link>
+                    <Link key={item.id} className="dark:hover:text-white hover:underline hover:text-black" href={item.id}>{item.name}</Link>
                 ))}
 
             </div>
