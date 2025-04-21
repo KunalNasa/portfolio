@@ -12,31 +12,42 @@ interface MetadataProps {
 
 const MetadataProvider = ({ title, description, imageUrl, url }: MetadataProps) => {
   useEffect(() => {
-    // Update the document title
     document.title = title;
 
-    // Update Open Graph metadata
-    const metaDescription = document.querySelector('meta[name="description"]') as HTMLMetaElement;
-    if (metaDescription) metaDescription.content = description;
+    const updateMeta = (selector: string, attr: string, value: string) => {
+      let tag = document.querySelector(selector) as HTMLMetaElement;
+      if (!tag) {
+        tag = document.createElement('meta');
+        if (selector.includes('property')) tag.setAttribute('property', attr);
+        else tag.setAttribute('name', attr);
+        document.head.appendChild(tag);
+      }
+      tag.content = value;
+    };
 
-    const metaOpenGraphTitle = document.querySelector('meta[property="og:title"]') as HTMLMetaElement;
-    if (metaOpenGraphTitle) metaOpenGraphTitle.content = title;
+    // Basic metadata (good for Gmail, SEO, etc.)
+    updateMeta("meta[name='description']", 'description', description);
 
-    const metaOpenGraphDescription = document.querySelector('meta[property="og:description"]') as HTMLMetaElement;
-    if (metaOpenGraphDescription) metaOpenGraphDescription.content = description;
+    // Open Graph (for LinkedIn, Facebook, etc.)
+    updateMeta("meta[property='og:title']", 'og:title', title);
+    updateMeta("meta[property='og:description']", 'og:description', description);
+    updateMeta("meta[property='og:url']", 'og:url', url);
+    updateMeta("meta[property='og:image']", 'og:image', imageUrl);
+    updateMeta("meta[property='og:type']", 'og:type', 'website');
 
-    const metaOpenGraphUrl = document.querySelector('meta[property="og:url"]') as HTMLMetaElement;
-    if (metaOpenGraphUrl) metaOpenGraphUrl.content = url;
+    // Twitter card
+    updateMeta("meta[name='twitter:card']", 'twitter:card', 'summary_large_image');
+    updateMeta("meta[name='twitter:title']", 'twitter:title', title);
+    updateMeta("meta[name='twitter:description']", 'twitter:description', description);
+    updateMeta("meta[name='twitter:image']", 'twitter:image', imageUrl);
+    updateMeta("meta[name='twitter:url']", 'twitter:url', url);
 
-    const metaOpenGraphImage = document.querySelector('meta[property="og:image"]') as HTMLMetaElement;
-    if (metaOpenGraphImage) metaOpenGraphImage.content = imageUrl;
-
-    // Add favicon
+    // Favicon
     const favicon = document.querySelector("link[rel='icon']") as HTMLLinkElement;
     if (favicon) favicon.href = '/Images/AppLogo.ico';
   }, [title, description, imageUrl, url]);
 
-  return null; // No need to render anything
+  return null;
 };
 
 export default MetadataProvider;
