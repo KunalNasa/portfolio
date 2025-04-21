@@ -15,11 +15,11 @@ const ThemeToggle = () => {
 
   return (
     <button
-  onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
 
->
-  {theme === "light" ? <FaSun  /> : <BsMoonStarsFill />}
-</button>
+    >
+      {theme === "light" ? <FaSun  /> : <BsMoonStarsFill />}
+    </button>
 
   );
 };
