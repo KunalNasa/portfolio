@@ -1,5 +1,3 @@
-import ThemeToggle from "@/components/ThemeToggle";
-import Link from "next/link";
 import Socials from "./Socials";
 
 export default function LeftView() {

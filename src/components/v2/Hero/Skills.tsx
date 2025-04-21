@@ -35,12 +35,15 @@ const itemVariants = {
 
 export default function Skills() {
   return (
+    <div>
+    <h4 className="text-xl font-semibold mb-4">Skills</h4>
     <motion.div
-      className="flex items-center flex-wrap gap-3"
-      variants={containerVariants}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.3 }}
+    id="v2Skills"
+    className="flex items-center flex-wrap gap-3"
+    variants={containerVariants}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true, amount: 0.3 }}
     >
       {skills.map((item) => (
         <motion.div key={item.name} variants={itemVariants}>
@@ -48,6 +51,8 @@ export default function Skills() {
         </motion.div>
       ))}
     </motion.div>
+    <p className="text-sm text-gray-500 mt-3">This is my most commonly used <span className="text-black dark:text-white">tech stack</span>. Additionally, I can <span className="text-black dark:text-white">quickly adapt to any other tech stack</span>  as well.</p>
+      </div>
   );
 }
 

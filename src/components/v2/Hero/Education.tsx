@@ -2,7 +2,7 @@ import Accordion from "@/components/Accordion";
 
 export default function Education() {
   return (
-    <div className="my-5">
+    <div className="my-5" id="v2Education">
       <h2 className="text-xl font-bold mb-3">Education</h2>
       <Accordion
         company="USIC&T"

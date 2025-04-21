@@ -8,13 +8,14 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { PiReadCvLogoBold } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
 import NewThemeToggle from "../NewThemeToggle";
+import Link from "next/link";
 
 const socials = [
-  { icon: <FaSquareXTwitter />, label: "Twitter" },
-  { icon: <CiLinkedin />, label: "LinkedIn" },
-  { icon: <FaGithub />, label: "GitHub" },
-  { icon: <PiReadCvLogoBold />, label: "Resume" },
-  { icon: <MdEmail />, label: "Email" },
+  { icon: <FaSquareXTwitter />, label: "Twitter", href: "https://x.com/_devkunal" },
+  { icon: <CiLinkedin />, label: "LinkedIn", href: "https://www.linkedin.com/in/kunalnasa/", },
+  { icon: <FaGithub />, label: "GitHub", href:"https://github.com/KunalNasa/" },
+  { icon: <PiReadCvLogoBold />, label: "Resume", href:"https://drive.google.com/file/d/10U4aHp3bbP_ftG8AGHGTw86gfQ-LWF4R/view" },
+  { icon: <MdEmail />, label: "Email", href:"mailto:kunalnasa.dev@gmail.com" },
 
 ];
 
@@ -31,7 +32,9 @@ export default function Socials() {
             transition={{ type: "spring", stiffness: 300, damping: 15 }}
             className="w-fit"
           >
-            <Button variant="secondary" icon={social.icon}></Button>
+            <Link target="_blank" rel="noopener noreferrer"  href={social.href}>
+                <Button variant="secondary" icon={social.icon}></Button>
+            </Link>
           </motion.div>
         ))}
       <NewThemeToggle />

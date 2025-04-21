@@ -3,7 +3,7 @@ import RevealWrapper from "../RevealWrapper";
 
 export default function Work() {
   return (
-    <div className="my-5">
+    <div className="my-5" id="v2Work">
       <h2 className="text-xl font-bold mb-3">Work Experience</h2>
     <RevealWrapper>
 
