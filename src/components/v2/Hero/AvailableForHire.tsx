@@ -6,7 +6,7 @@ export default function AvailableForHire() {
   return (
     <div className="flex items-center gap-4 my-5">
         <Button icon={<IoBriefcase/>}>Available for hire</Button>
-        <span>or</span>
+        <span className="text-gray-500">or</span>
         <Button icon={<MdEmail/>}>Email Me</Button>
     </div>
    

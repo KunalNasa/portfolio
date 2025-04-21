@@ -5,7 +5,7 @@ export default function GithubStats() {
     <div className="my-5">
       <GitHubCalendar
         username="KunalNasa"
-        blockSize={10} 
+        blockSize={15} 
         year={2025}
         blockMargin={5}
         fontSize={14}

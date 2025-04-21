@@ -6,6 +6,7 @@ import RevealWrapper from "../RevealWrapper";
 import ConnectWithMe from "./ConnectWithMe";
 import Education from "./Education";
 import Work from "./Work";
+import Skills from "./Skills";
 
 export default function Hero() {
   return (
@@ -18,6 +19,9 @@ export default function Hero() {
       </RevealWrapper>
       <RevealWrapper>
         <GithubStats/>
+      </RevealWrapper>
+      <RevealWrapper>
+        <Skills />
       </RevealWrapper>
       <RevealWrapper>
         <ConnectWithMe/>
