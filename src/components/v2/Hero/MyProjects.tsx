@@ -19,8 +19,8 @@ const MyProjects = () => {
               description={project.description}
               github={project.githubUrl}
               techstack={project.techstack}
-            />
-        ))}
+              />
+            ))}
     </div>
     <p className='text-sm my-5 flex md:flex-row flex-col items-center gap-3 text-gray-500 mb-8'>These are few projects I've worked on recently. Want to see more? Visit <Link target='_blank' rel="noopener noreferrer" href="https://github.com/KunalNasa" className="dark:text-white text-black"><Button icon={<FaGithub/>}>My Github</Button></Link>.</p>
     </div>

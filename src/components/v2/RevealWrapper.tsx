@@ -27,7 +27,7 @@ export default function RevealWrapper({
         damping: 20,
         stiffness: 100,
       }}
-      viewport={{ once: true, amount: 0.4 }}
+      viewport={{ once: true, amount: 0.2 }}
     >
       {children}
     </motion.div>
