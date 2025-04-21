@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function LeftView() {
   return (
-    <div className="w-[25%]">
+    <div className="md:flex flex-col hidden w-[25%]">
       <ThemeToggle />
     </div>
   );

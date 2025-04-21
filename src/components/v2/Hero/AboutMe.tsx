@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <div>
       <p className="text-sm text-gray-500">Hey it's me</p>
-      <h1 className="font-skillscreen mb-2 text-3xl">Kunal Nasa <span className="text-gray-500 font-sans text-lg">/@_devkunal</span></h1>
+      <h1 className="font-skillscreen mb-4 text-3xl">Kunal Nasa <span className="text-gray-500 font-sans text-lg">/@_devkunal</span></h1>
 
       <div className="flex items-start gap-5">
       <p className="text-gray-500">
