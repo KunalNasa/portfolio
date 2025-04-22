@@ -24,7 +24,7 @@ export const projects = [
     },
     {
         imageUrl: '/Images/go0-nNew.png',
-        title: 'Recruitment Marketplace',
+        title: 'Go Zero to N',
         liveUrl: "https://go0-n.com",
         description: 'A platform connecting companies with recruiters to simplify hiring and talent sourcing.',
         techstack: ['MongoDB', 'Next.js', 'Zod', 'Nodemailer', 'Shadcn UI', 'Aceternity UI', 'Axios']
