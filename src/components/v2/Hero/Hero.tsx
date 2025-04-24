@@ -9,6 +9,7 @@ import Work from "./Work";
 import Skills from "./Skills";
 import MyProjects from "./MyProjects";
 import EOF from "./EOF";
+import MobileBlogs from "../blogs/MobileBlogs";
 
 export default function Hero() {
   return (
@@ -34,6 +35,9 @@ export default function Hero() {
       </RevealWrapper>
       <RevealWrapper>
         <MyProjects/>
+      </RevealWrapper>
+      <RevealWrapper>
+        <MobileBlogs/>
       </RevealWrapper>
       <RevealWrapper>
         <EOF/>

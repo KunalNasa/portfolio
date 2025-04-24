@@ -22,7 +22,7 @@ const MyProjects = () => {
               />
             ))}
     </div>
-    <p className='text-sm my-5 flex md:flex-row flex-col items-center gap-3 text-gray-500 mb-8'>These are few projects I've worked on recently. Want to see more? Visit <Link target='_blank' rel="noopener noreferrer" href="https://github.com/KunalNasa" className="dark:text-white text-black"><Button icon={<FaGithub/>}>My Github</Button></Link>.</p>
+    <p className='text-sm mt-4 flex md:flex-row flex-col items-center gap-3 text-gray-500 mb-2'>These are few projects I've worked on recently. Want to see more? Visit <Link target='_blank' rel="noopener noreferrer" href="https://github.com/KunalNasa" className="dark:text-white text-black"><Button icon={<FaGithub/>}>My Github</Button></Link></p>
     </div>
   )
 }
