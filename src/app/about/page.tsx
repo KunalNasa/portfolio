@@ -35,7 +35,7 @@ const page = () => {
         </p>
       </div>
       <div className='flex flex-col md:flex-row items-center gap-5 my-5'>
-      <Link href='https://drive.google.com/file/d/1VzfE4J7hh3u5pxtNcF7zClhdcDzU4z32/view?usp=sharing' target="_blank" rel="noopener noreferrer">
+      <Link href='https://drive.google.com/file/d/1Y-n98q6YRiSL91lab9mMxXbU_66m-5u6/view?usp=sharing' target="_blank" rel="noopener noreferrer">
         <button className="tilt-button flex items-center gap-5 text-xl">
           Resume <FaExternalLinkAlt/> 
         </button>
