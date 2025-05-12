@@ -15,7 +15,7 @@ export default function AboutMe() {
         Right now, I’m looking for <span className="text-black dark:text-white">opportunities</span> to work on real projects and get hands-on <span className="text-black dark:text-white">industry experience</span>.
       </p>
         <Avatar>
-          <AvatarImage src="itsme.jpg" alt="@shadcn" />
+          <AvatarImage src="itsme.png" alt="@shadcn" />
           <AvatarFallback>KN</AvatarFallback>
         </Avatar>
       </div>
