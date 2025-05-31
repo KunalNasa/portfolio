@@ -8,7 +8,6 @@ export default function page() {
       <LeftView />
       <Hero />
       <RightView />
-      
     </div>
   );
 }

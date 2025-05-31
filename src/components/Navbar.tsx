@@ -35,7 +35,7 @@ const Navbar = () => {
       icon: (
         <IconScript className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://drive.google.com/file/d/1Y-n98q6YRiSL91lab9mMxXbU_66m-5u6/view?usp=sharing",
+      href: "https://drive.google.com/file/d/1JwkZhn5o_liLmY0dx5kochqby3hNezy5/view?usp=sharing",
     },
     {
       title: "LinkedIn",

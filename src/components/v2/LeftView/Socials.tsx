@@ -14,7 +14,7 @@ const socials = [
   { icon: <FaSquareXTwitter />, label: "Twitter", href: "https://x.com/_devkunal" },
   { icon: <CiLinkedin />, label: "LinkedIn", href: "https://www.linkedin.com/in/kunalnasa/", },
   { icon: <FaGithub />, label: "GitHub", href:"https://github.com/KunalNasa/" },
-  { icon: <PiReadCvLogoBold />, label: "Resume", href:"https://drive.google.com/file/d/10U4aHp3bbP_ftG8AGHGTw86gfQ-LWF4R/view" },
+  { icon: <PiReadCvLogoBold />, label: "Resume", href:"https://drive.google.com/file/d/1JwkZhn5o_liLmY0dx5kochqby3hNezy5/view?usp=sharing" },
   { icon: <MdEmail />, label: "Email", href:"mailto:kunalnasa.dev@gmail.com" },
 
 ];
