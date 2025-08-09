@@ -10,37 +10,35 @@ import Skills from "./Skills";
 import MyProjects from "./MyProjects";
 import EOF from "./EOF";
 import MobileBlogs from "../blogs/MobileBlogs";
+import MobileThemeToggle from "./MobileThemeToggle";
 
 export default function Hero() {
   return (
     <div className="md:w-[50%] p-5 w-full flex flex-col gap-2 my-5">
-      <RevealWrapper>
-        <AboutMe/>
-      </RevealWrapper>
-      <RevealWrapper>
-        <AvailableForHire/>
-      </RevealWrapper>
-      <RevealWrapper>
-        <GithubStats/>
-      </RevealWrapper>
+      <AboutMe />
+      <AvailableForHire />
+      <GithubStats />
       <RevealWrapper>
         <Skills />
       </RevealWrapper>
       <RevealWrapper>
-        <ConnectWithMe/>
+        <ConnectWithMe />
       </RevealWrapper>
-        <Work/>
+      <Work />
       <RevealWrapper>
-        <Education/>
-      </RevealWrapper>
-      <RevealWrapper>
-        <MyProjects/>
+        <Education />
       </RevealWrapper>
       <RevealWrapper>
-        <MobileBlogs/>
+        <MyProjects />
       </RevealWrapper>
       <RevealWrapper>
-        <EOF/>
+        <MobileBlogs />
+      </RevealWrapper>
+      <RevealWrapper>
+        <MobileThemeToggle />
+      </RevealWrapper>
+      <RevealWrapper>
+        <EOF />
       </RevealWrapper>
     </div>
   );
