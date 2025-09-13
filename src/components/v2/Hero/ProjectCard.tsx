@@ -22,7 +22,7 @@ const ProjectCard = ({ image, title, description, website, github, techstack }: 
           className="object-cover hover:rounded-b-xl"
           src={image}
           alt="Image"
-          width={400}
+          width={1200}
           height={300}
         />
       </div>
