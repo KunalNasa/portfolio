@@ -13,7 +13,7 @@ export default function Work() {
   const workExpList: IworkExpList[] = [
     {
       company: "Newexer",
-      role: "Software Engineer",
+      role: "Software Engineer I (SWE-1)",
       from: "July 2025",
       to: "Present",
       description: "Currently working at Newexer to build a <b>JSX-to-PDF generation library from scratch</b> in TypeScript. Responsible for designing a pipeline that converts user’s JSX code into PDF, implementing features from scratch using a first-principles approach, and selecting the right <b> data structures and algorithms </b>to ensure clean and maintainable code.<br/> Promoted to <b>Software Engineer I</b> after successfully completing a four-month internship.",
