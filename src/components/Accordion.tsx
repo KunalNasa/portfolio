@@ -50,9 +50,8 @@ export default function Accordion({
             {from} – {to}
           </span>
           <FiChevronDown
-            className={`transition-transform duration-300 text-xl flex-shrink-0 ${
-              isOpen ? '' : '-rotate-90'
-            }`}
+            className={`transition-transform duration-300 text-xl flex-shrink-0 ${isOpen ? '' : '-rotate-90'
+              }`}
           />
         </div>
       </div>
@@ -68,7 +67,10 @@ export default function Accordion({
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="overflow-hidden mt-4"
           >
-            <p className="text-sm text-gray-600 dark:text-gray-300">{description}</p>
+            <p
+              className="text-sm text-gray-600 dark:text-gray-300"
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
           </motion.div>
         )}
       </AnimatePresence>
