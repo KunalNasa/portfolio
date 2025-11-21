@@ -15,27 +15,27 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <>
-        {mounted ? (
-            <>
-            <MetadataProvider
-              title="Kunal Nasa - Portfolio"
-              description="Hey, I'm Kunal Nasa! Explore my portfolio, skills, and projects."
-              imageUrl="/Images/AppLogo.jpeg"
-              url="https://kunalnasa.xyz"
-              />
-            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-              <Navbar />
-              {children}
-              <Toaster />
-            </ThemeProvider>
-          </>
-        ) : (
-            <>
+      {mounted ? (
+        <>
+          <MetadataProvider
+            title="Kunal Nasa - Portfolio"
+            description="Hey, I'm Kunal Nasa! Explore my portfolio, skills, and projects."
+            imageUrl="/Images/AppLogo.jpeg"
+            url="https://kunalnasa.work"
+          />
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <Navbar />
             {children}
             <Toaster />
-          </>
-        )}
+          </ThemeProvider>
+        </>
+      ) : (
+        <>
+          <Navbar />
+          {children}
+          <Toaster />
+        </>
+      )}
     </>
   );
 }

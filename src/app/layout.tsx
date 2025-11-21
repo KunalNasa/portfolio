@@ -42,20 +42,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <title>Kunal Nasa – Portfolio</title>
         <meta name="description" content="Kunal Nasa's personal portfolio. Explore projects, design, and work." />
-        
+
         {/* Open Graph for LinkedIn / Facebook */}
         <meta property="og:title" content="Kunal Nasa – Portfolio" />
         <meta property="og:description" content="Kunal Nasa's personal portfolio. Explore projects, design, and work." />
-        <meta property="og:image" content="https://www.kunalnasa.xyz/og-image.png" />
-        <meta property="og:url" content="https://www.kunalnasa.xyz" />
+        <meta property="og:image" content="https://www.kunalnasa.work/og-image.png" />
+        <meta property="og:url" content="https://www.kunalnasa.work" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Kunal Nasa – Portfolio" />
         <meta name="twitter:description" content="Kunal Nasa's personal portfolio. Explore projects, design, and work." />
-        <meta name="twitter:image" content="https://www.kunalnasa.xyz/og-image.png" />
-        <meta name="twitter:url" content="https://www.kunalnasa.xyz" />
+        <meta name="twitter:image" content="https://www.kunalnasa.work/og-image.png" />
+        <meta name="twitter:url" content="https://www.kunalnasa.work" />
 
         {/* Favicon */}
         <link rel="icon" href="/Images/AppLogo.ico" type="image/x-icon" />

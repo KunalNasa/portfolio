@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             title="Kunal Nasa - Portfolio"
             description="Hey, I'm Kunal Nasa! Explore my portfolio, skills, and projects."
             imageUrl="/Images/AppLogo.jpeg"
-            url="https://kunalnasa.xyz"
+            url="https://kunalnasa.work"
           />
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             {children}

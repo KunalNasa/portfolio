@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: 'Kunal Nasa - Portfolio',
     description: 'Check out my portfolio, projects, and skills.',
-    url: 'https://kunalnasa.xyz',
+    url: 'https://kunalnasa.work',
     images: [
       {
         url: '/Images/AppLogo.jpeg',
@@ -25,14 +25,14 @@ export const metadata = {
 export default function Home() {
   return (
     <div className="relative h-auto w-full p-5 flex flex-col mx-auto md:w-1/2">
-      <AboutMe/>
-      <MySkills/>
-      <MyProjects/>
+      <AboutMe />
+      <MySkills />
+      <MyProjects />
       <div id="EmailSection">
         <h3 className="w-full text-center mt-12 text-3xl font-semibold">Stay Connected</h3>
-        <EmailForm/>
+        <EmailForm />
       </div>
     </div>
-    
+
   );
 }
