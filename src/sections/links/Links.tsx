@@ -1,11 +1,15 @@
+"use client";
+
 import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandX,
+  IconCheck,
   IconFileText,
   IconMail,
 } from "@tabler/icons-react";
 import Link from "next/link";
+import { useState } from "react";
 import buttonStyles from "@/components/atoms/button/Button.module.css";
 import styles from "./Links.module.css";
 
@@ -26,14 +30,20 @@ const links = [
     href: "https://drive.google.com/file/d/1JwkZhn5o_liLmY0dx5kochqby3hNezy5/view?usp=sharing",
     icon: IconFileText,
   },
-  {
-    label: "Email",
-    href: "mailto:kunalnasa.dev@gmail.com",
-    icon: IconMail,
-  },
 ];
 
 export function Links() {
+  const [copied, setCopied] = useState(false);
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText("kunalnasa.dev@gmail.com");
+      setCopied(true);
+    } catch {
+      setCopied(false);
+    }
+  };
+
   return (
     <section className={styles.links}>
       <h2>Links & Contact</h2>
@@ -44,13 +54,27 @@ export function Links() {
             key={label}
             href={href}
             className={buttonStyles.button}
-            target={href.startsWith("mailto:") ? undefined : "_blank"}
+            target="_blank"
             rel="noopener noreferrer"
           >
             <Icon size={18} stroke={1.8} />
             {label}
           </Link>
         ))}
+
+        <button
+          type="button"
+          className={buttonStyles.button}
+          onClick={copyEmail}
+          aria-live="polite"
+        >
+          {copied ? (
+            <IconCheck size={18} stroke={1.8} />
+          ) : (
+            <IconMail size={18} stroke={1.8} />
+          )}
+          {copied ? "Email copied!" : "Copy email"}
+        </button>
       </div>
     </section>
   );

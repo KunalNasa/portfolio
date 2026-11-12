@@ -26,11 +26,11 @@ export function Education() {
         </div>
 
         <p className={styles.description}>
-          Pursuing a degree in Computer Science and Engineering from USIC&T,
-          focusing on core subjects like Operating Systems, Database Management
-          Systems, Computer Networks, and Software Development. Gaining hands-on
-          experience in programming, problem-solving, and system design to build
-          a strong foundation for a career in technology.
+          Graduated with a degree in Computer Science and Engineering from
+          USIC&T in 2026, studying core subjects like Operating Systems,
+          Database Management Systems, Computer Networks, and Software
+          Development. Gained experience in programming, problem-solving, and
+          system design, building a strong foundation in software engineering.{" "}
         </p>
       </article>
     </section>
