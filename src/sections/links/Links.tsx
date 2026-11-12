@@ -41,6 +41,10 @@ export function Links() {
       setCopied(true);
     } catch {
       setCopied(false);
+    } finally {
+      setTimeout(() => {
+        setCopied(false);
+      }, 2000);
     }
   };
 
