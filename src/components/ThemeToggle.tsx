@@ -1,27 +1,26 @@
 "use client";
 
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
-import { FaSun } from "react-icons/fa";
-import { BsMoonStarsFill } from "react-icons/bs";
+import { IconMoon, IconSun } from "@tabler/icons-react";
+import { useTheme } from "@wrksz/themes/client";
+import { IconButton } from "./atoms/button/Button";
 
-const ThemeToggle = () => {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+export function ThemeToggle() {
+  const { resolvedTheme, setTheme } = useTheme();
 
-  useEffect(() => setMounted(true), []);
-
-  if (!mounted) return null;
+  const isDark = resolvedTheme === "dark";
 
   return (
-    <button
-      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-
+    <IconButton
+      type="button"
+      disabled={!resolvedTheme}
+      onClick={() => setTheme(isDark ? "light" : "dark")}
+      aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
     >
-      {theme === "light" ? <FaSun  /> : <BsMoonStarsFill />}
-    </button>
-
+      {isDark ? (
+        <IconSun size={20} stroke={1.8} />
+      ) : (
+        <IconMoon size={20} stroke={1.8} />
+      )}
+    </IconButton>
   );
-};
-
-export default ThemeToggle;
+}

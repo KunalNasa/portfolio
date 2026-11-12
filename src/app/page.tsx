@@ -1,38 +1,24 @@
-import EmailForm from "@/components/EmailForm";
-import AboutMe from "@/components/AboutMe";
-import MySkills from "@/components/MySkills";
-import MyProjects from "@/components/MyProjects";
+import GithubStats from "@/components/GithubStats";
+import { About } from "@/sections/about/About";
+import { Education } from "@/sections/education/Education";
+import { Experience } from "@/sections/experience/Experience";
+import { Header } from "@/sections/header/Header";
+import { Links } from "@/sections/links/Links";
+import { Projects } from "@/sections/projects/Projects";
+import { TechStack } from "@/sections/techStack/TechStack";
+import styles from "./page.module.css";
 
-export const metadata = {
-  title: 'Kunal Nasa - Portfolio',
-  description: "Hey, I'm Kunal Nasa! Explore my portfolio, skills, and projects.",
-  keywords: ['Kunal Nasa', 'Portfolio', 'Web Developer', 'AI', 'Next.js', 'MERN', 'React.js', 'MongoDB', 'Express', 'Node.js', 'Postgres', 'SQL'],
-  authors: [{ name: 'Kunal Nasa' }],
-  openGraph: {
-    title: 'Kunal Nasa - Portfolio',
-    description: 'Check out my portfolio, projects, and skills.',
-    url: 'https://kunalnasa.work',
-    images: [
-      {
-        url: '/Images/AppLogo.jpeg',
-        width: 800,
-        height: 600,
-        alt: 'Kunal Nasa Portfolio Preview',
-      },
-    ],
-  },
-};
 export default function Home() {
   return (
-    <div className="relative h-auto w-full p-5 flex flex-col mx-auto md:w-1/2">
-      <AboutMe />
-      <MySkills />
-      <MyProjects />
-      <div id="EmailSection">
-        <h3 className="w-full text-center mt-12 text-3xl font-semibold">Stay Connected</h3>
-        <EmailForm />
-      </div>
+    <div className={styles.page}>
+      <Header />
+      <About />
+      <Links />
+      <GithubStats />
+      <TechStack />
+      <Experience />
+      <Education />
+      <Projects />
     </div>
-
   );
 }
